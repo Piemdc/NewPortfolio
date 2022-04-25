@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
+import Loading from './composants/Loading.js'
+import Header from './header/Header.js';
+import Home from './composants/Home.js';
+import './header/header.css';
+
+import audio from './images/Looking for a new beginning.ogg'
+
 
 function App() {
+
+
+  let song = new Audio(audio);
+  song.play()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Loading} />
+          <Route path="/home" component={Home} />
+        </Switch>
+
+      </div>
+    </BrowserRouter>
+
   );
 }
 
