@@ -14,6 +14,8 @@ function App() {
 
   let song = new Audio(audio);
   song.play()
+  song.volume = 0.1;
+  song.loop = true;
 
   return (
 

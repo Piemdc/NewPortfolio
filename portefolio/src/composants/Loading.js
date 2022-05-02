@@ -7,8 +7,16 @@ export default function Loading() {
     return (
 
         <div className='startscreen'>
-            <Box nom='Pierre Magnien' img={start} id='start' link='/home' />
-        </div>
+            <div className='ltbox'>
+
+                <a id='start' href='/home'><h2 className='boxtitle'> Pierre Magnien</h2>
+                    <img src={start} alt='Start' className='navimg' /></a>
+
+
+            </div>
+        </div >
+
+
     )
 }
 

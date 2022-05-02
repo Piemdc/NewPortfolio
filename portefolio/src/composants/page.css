@@ -1,0 +1,47 @@
+.page {
+    background-image: url(../images/paper.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60vw;
+    margin: auto auto;
+    border-radius: 1%;
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.titlepage {
+    font-family: 'Pixel';
+    margin: 0;
+}
+
+.textpres {
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(70, 69, 69);
+
+}
+
+.litletitlepage {
+    color: rgb(70, 69, 69);
+    font-family: 'Pixeltext';
+
+}
+
+progress {
+    border-radius: 1%;
+
+}
+
+progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(42, 153, 70);
+    border-radius: 7px;
+}
