@@ -1,6 +1,10 @@
 import './page.css'
-import avatar from '../images/pierre.png'
-
+import avatar from '../images/pierre.svg'
+import Minibox from '../composants/Minibox.js';
+import footus from '../images/footus.svg'
+import music from '../images/music.svg'
+import gaming from '../images/gaming.svg'
+import design from '../images/design.svg'
 
 
 const Page = (props) => {
@@ -10,7 +14,6 @@ const Page = (props) => {
     var anni = new Date("08 december, " + annee);
     var intervalle = anni.getTime() - actu.getTime();
     intervalle = Math.floor(intervalle / (1000 * 60 * 60 * 24));
-    console.log(intervalle)
 
 
     function changewindow() {
@@ -36,8 +39,12 @@ const Page = (props) => {
                         professionnel, il est aujourd'hui à la recherche d'une formation complémentaire.
                         Accepté à HETIC en 3ème année de bachelor, il ne lui manque plus que la confiance d'une entreprise pour mener à bien sa mission"</p>
                 </div>
-
+                <div className='miniboxContainer'>
+                    <Minibox nom='Football Américain' img={footus} details='Joueur, Coach U19' /> <Minibox nom='Musique' img={music} details='Ecoutée' /> <Minibox nom='Jeux Videos' img={gaming} /> <Minibox nom='Design' img={design} details='Développement, Créations' />
+                </div>
                 <button onClick={changewindow} style={{ width: '100%' }}>return</button>
+
+
 
             </div >
         )
