@@ -1,20 +1,27 @@
 import './page.css'
-import avatar from '../images/pierre.svg'
 import Minibox from '../composants/Minibox.js';
+
+// images logos
+import avatar from '../images/pierre.svg'
 import footus from '../images/footus.svg'
 import music from '../images/music.svg'
 import gaming from '../images/gaming.svg'
 import design from '../images/design.svg'
+import js from '../images/javascript.svg'
+import html from '../images/html.svg'
+import css from '../images/css.svg'
+import ps from '../images/ps.svg'
 
+// images site
+import modulox from '../images/modulox.svg'
+import carbu from '../images/carbu.svg'
+import ether from '../images/ether.svg'
+
+// images réseaux
+import linkedin from '../images/linkedin.svg'
+import git from '../images/git.svg'
 
 const Page = (props) => {
-
-    var actu = new Date();
-    var annee = actu.getFullYear();
-    var anni = new Date("08 december, " + annee);
-    var intervalle = anni.getTime() - actu.getTime();
-    intervalle = Math.floor(intervalle / (1000 * 60 * 60 * 24));
-
 
     function changewindow() {
         props.setWindow('')
@@ -42,30 +49,47 @@ const Page = (props) => {
                 <div className='miniboxContainer'>
                     <Minibox nom='Football Américain' img={footus} details='Joueur, Coach U19' /> <Minibox nom='Musique' img={music} details='Ecoutée' /> <Minibox nom='Jeux Videos' img={gaming} /> <Minibox nom='Design' img={design} details='Développement, Créations' />
                 </div>
-                <button onClick={changewindow} style={{ width: '100%' }}>return</button>
 
+                <h2 className='titlepage' style={{ width: '100%' }}>Réseaux</h2>
+
+                <div className='miniboxContainer'>
+                    <Minibox click='true' url='linkedin' nom='Profil Linkedin' img={linkedin} />  <Minibox click='true' url='github' nom='Profil Girhub' img={git} />
+                </div>
+
+                <div style={{ width: '100%' }}>
+                    <button className='closebutton' onClick={changewindow} >&lt;</button>
+                </div>
 
 
             </div >
-        )
-    }
-
-    else if (props.type === 'skills') {
-        return (
-            <div className='page'>
-
-                <button onClick={changewindow}>return</button>
-
-            </div>
         )
     }
     else if (props.type === 'bagage') {
         return (
             <div className='page'>
 
-                <button onClick={changewindow}>return</button>
+                <h2 className='titlepage' style={{ width: '100%' }}>Compétences</h2>
 
-            </div>
+
+
+
+                <div className='miniboxContainer'>
+                    <Minibox nom='Javascript' img={js} details='Vanilla, React , ThreeJs' /> <Minibox nom='HTML5' img={html} /> <Minibox nom='CSS' img={css} /> <Minibox nom='Photoshop' img={ps} />
+                </div>
+
+
+                <h2 className='titlepage' style={{ width: '100%' }}>Réalisations</h2>
+                <span><em>Cliquez pour accéder au site</em></span>
+
+                <div className='miniboxContainer'>
+                    <Minibox click='true' nom='Modulox' url='modulox' img={modulox} details='JS,HTML/CSS' /> <Minibox click='true' url='carburants' nom='Prix Carburants' img={carbu} details='JS,HTML/CSS' /> <Minibox click='true' url='ethernal' nom='Ethernal' img={ether} details='JS,HTML/CSS' />
+                </div>
+
+
+                <div style={{ width: '100%' }}>
+                    <button className='closebutton' onClick={changewindow} >&lt;</button>
+                </div>
+            </div >
         )
     }
 }

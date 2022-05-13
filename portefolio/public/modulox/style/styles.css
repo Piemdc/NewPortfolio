@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); /*Roboto Slab Regular + Roboto slab bold*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap'); /*Roboto regular + Roboto italic*/
+
+
+h1
+{
+    font-size: 36px ; font-weight: 700 ; line-height: 1.3 ; color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    word-spacing:200px;
+
+}
+
+h2
+{
+    font-size: 30px ; font-weight: 700 ; line-height: 1.3 ; color: #333333;
+}
+
+h3
+{
+    font-size: 28px ; font-weight: 700 ; line-height: 1.3 ; color: #333333;
+}
+
+h4
+{
+    font-size: 20px ; font-weight: 700 ; line-height: 1.3 ; color: #333333;
+}
+
+h5
+{
+    font-size: 18px ; font-weight: 700 ; line-height: 1.3 ; color: #333333;
+}
+
+h6
+{
+    font-size: 16px ; font-weight: 700 ; line-height: 1.3 ; color: #333333;
+}
+
+
+body, button, input, select, textarea{ 
+
+font-size: 13px ; font-weight: 400 ; line-height: 1.8 ;
+
+}
+/*///////////////////////*/
+/*/////////HEADER////////*/
+/*///////////////////////*/
+
+header{
+    background-image: url(../images/banner.jpg);
+    background-position:50%;
+    background-size:260%;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+
+}
+.nav-link{
+    color: grey;
+    margin-left: 2%;
+}
+.navbar-toggler{
+    color: grey;
+}
+
+.logonav{
+    width: 50%;
+}
+.titre h1{
+    margin-top: 30%;
+    margin-bottom: 0;
+    font-size: 45px
+
+}
+
+.titre{
+    padding-bottom: 30%;
+    
+}
+
+.titre span{
+    color: white;
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.titre button{
+    color: white;
+    margin: 3% 0 0 3%;
+    padding: 4% 0%;
+
+}
+/*///////////////////////*/
+/*////////A PROPOS///////*/
+/*///////////////////////*/
+.apropos{
+    padding: 15% 0;
+    background-color: black;
+}
+.apropos2{
+    margin: 0 5%;
+}
+.apropos h3{
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+}
+
+.apropos span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    text-align: justify;
+}
+
+/*/////////////////////*/
+/*////////GAMME///////*/
+/*////////////////////*/
+
+
+.gamme{
+    margin-top: 15%;
+    font-family: 'Roboto slab', serif;
+}
+.gamme>h2{
+    width: 87%;
+    margin: 0 auto;
+    font-size: 35px;
+}
+.gamme>h4{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+.robots{
+    color: rgb(124, 46, 124);
+}
+.robots2{
+    color: rgb(7, 160, 160);
+}
+
+.robots3{
+    color: rgb(199, 53, 8);
+}
+.robotimg{
+   transform: translatey(-15px);
+   transition: 500ms;
+}
+.card-text{
+    margin-bottom: 3%;
+}
+
+.produitstitre{
+    font-family: 'Roboto slab', serif; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 15.5px;
+    line-height: 130%;
+    color: #333333;
+}
+
+.prix{
+    color: grey;
+}
+.prix a{
+    color:grey;
+}
+
+/*/////////////////////////*/
+/*////////Newsletter///////*/
+/*////////////////////////*/
+.newsletterbox{
+    background-image: url(../images/bg_contact.jpg);
+    background-position: center;
+    background-size: 270%;
+    width: 100%;
+}
+.newsletter{
+    width: 95%;
+    margin: 0 auto;
+    height: 350px;  
+    padding-top: 2%;
+}
+.newsletter>form>div>input{
+    width: 90%;
+    margin: 0 auto;
+}
+.newsletter h3{
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.newsletter p{
+    color: white;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+/*/////////////////////////*/
+/*//////////actus/////////*/
+/*////////////////////////*/
+
+.actus{
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
+.actus h2{
+    font-family: 'Roboto Slab', serif;
+    color: #333333;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.actus p{
+    color: #333333;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgdiv{
+
+    overflow:hidden;
+}
+.imgactu{  
+    transition: 500ms;
+}
+.presse{
+    margin: 5%;
+}
+.presse h5{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.presse p{
+    color: grey;
+    font-size: 16.5px;
+}
+
+/*/////////////////////////*/
+/*//////////CONTACT////////*/
+/*////////////////////////*/
+
+.contactfooter{
+    padding-top: 10%;
+    background-image: url(../images/bg_contact.jpg);
+    color: white;
+    width:100%;
+
+}
+.contact{
+    margin: 2%;
+}
+.logos{
+    justify-content: space-around;
+}
+
+.contactfooter h3{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+}
+
+.formulaire{
+    margin-top: 15%;
+    color: black;
+}
+.formheader{
+    width: 90%;
+    padding:4%;
+    margin: 0 auto;
+    transform: translatey(-25px);
+}
+
+.formheader h3{
+    font-size: 30px;
+    margin: 0;
+}
+
+/*/////////////////////////*/
+/*//////////Footer////////*/
+/*////////////////////////*/
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 3%;
+
+}
+
+footer div{
+    padding: 10% 0;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) { 
+    
+    .logonav{
+        width: 20%;
+        padding: 1%;
+        margin-left: 3%;
+    }
+
+    .navbar-toggler{
+        margin-right: 2%;
+    }
+
+    header{
+        background-image: url(../images/banner.jpg);
+        background-position:50%;
+        background-size:130%;
+    }
+
+    h1{
+        word-spacing:20px;
+    }
+    .titre h1{
+        margin-top: 50%;
+        margin-bottom: 0;
+        font-size: 60px
+    
+    }
+    .titre span{
+        flex-grow: 1;
+        font-size:18px
+    }
+
+    .apropos{
+        padding: 5% 0;
+    }
+    .apropos2 span{
+        font-size: 20px;
+    }
+    
+    .gamme{
+        margin-top: 9%;
+    }
+
+    .products>div{
+        width: 15rem;
+    }
+    .prix p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .newsletter{
+        height: 320px;  
+        padding-top: 1%;
+    }
+
+    .actus h2{
+        margin-top: 1%;
+    }
+    .pressebox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .presse{
+        width: 40%;
+    }
+    .presse p{
+        
+    font-size: 14px;   
+    }
+    .formulaire{
+        margin-top: 10%;
+    }
+    .logos{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+
+    .navbar{
+        background-color: transparent;
+    }
+    .nav-link{
+        color: white;
+        flex-grow: 1;
+        width: 100%;
+        padding: 0%;
+        font-size: 12px;
+        margin-left:10px;
+    }
+    .nav-item{
+        flex-grow: 1;
+        display: block;
+
+    }
+
+    .banniere button{
+        width: 15%;
+        height: 1%;
+    }
+ 
+    .logonav{
+        width: 45%;
+        margin-left: 20%;
+    }
+    .pressebox{
+        justify-content: space-around;
+        margin:5%
+    }
+    .presse{
+        width: 30%;
+        margin: 0;
+    }
+    .formulaire{
+        margin-top: 0;
+    }
+    .logos{
+        width: 100%;
+    }
+    footer>div{
+ 
+        padding:5% 0;
+        margin: 0 0 0 4%;
+   
+    }
+    footer>div a{
+        margin:1%;
+        text-align:left
+    }
+
+}
+
+
+
+.robotimg:hover{
+    transform: scale(110%) translateY(-20px);
+}
+
+.imgactu:hover{
+    transform: scale(110%);
+    opacity: 80%;
+    
+}

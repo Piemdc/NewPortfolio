@@ -1,7 +1,6 @@
 import './home.css'
 import Box from './Box'
 import start from '../images/start.svg'
-import audio from '../images/Looking for a new beginning.ogg'
 
 export default function Loading() {
     return (

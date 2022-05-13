@@ -1,0 +1,96 @@
+h5{
+    font-size: 2rem;
+    padding: 10%;
+    font-family: 'Archivo', sans-serif;
+}
+p{
+    padding: 2%;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    background-color:rgba(0, 0, 0, 0.39);
+} 
+
+.afficher{
+    display: block;
+}
+.ekip{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.fiche{
+    border-radius: 5px;
+    width: 100%;
+    margin: 2% auto 2%;
+    box-shadow: 0px 0px 10px -3px #000000;
+}
+.fiche h5{
+
+    color:white;
+    text-shadow: 2px 2px 2px #000000;
+}
+.fiche h3{
+
+    color:white;
+    padding: 5%;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.pierre{
+    background-image: url('https://picsum.photos/id/1025/200/300');
+    background-position: top;
+    background-size: cover;
+
+}
+.eloise{
+    background-image: url('https://picsum.photos/id/1027/200/300');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.quentin{
+    background-image: url('https://picsum.photos/id/1062/200/300');
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.alexis{
+    background-image: url('https://picsum.photos/id/177/200/300');
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.jeanloup{
+    background-image: url('https://picsum.photos/id/331/200/300');
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.jacob{
+    background-image: url('https://picsum.photos/id/375/200/300');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    p{
+        opacity: 0;
+        transition: 2s;
+    }
+    p:hover{
+        opacity: 100%;
+    }
+    .fiche{
+        width:30%
+    }
+}

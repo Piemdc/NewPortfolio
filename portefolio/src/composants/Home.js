@@ -51,10 +51,15 @@ export default function Home(props) {
                 <div className='botbox'>
                     <Box img={bag} window={window} setWindow={setWindow} link='bagage' id='bag' />
                 </div>
+
+
                 {/* ///////////////// texte /////////////////*/}
-                <div className='text' style={{ display: displaytext ? 'block' : 'none' }}>
-                    <div id='pixeltext'>{placeholder}</div>
-                    <button className='closebutton' onClick={hidetext}>  &gt; </button>
+
+                <div style={{ width: '100%', height: '100%', position: 'absolute', display: displaytext ? 'block' : 'none' }}>
+                    <div className='text' style={{}}>
+                        <div id='pixeltext'>{placeholder}</div>
+                        <button className='closebutton' style={{ float: 'right' }} onClick={hidetext}>  &gt; </button>
+                    </div>
                 </div>
             </div >
         )

@@ -1,0 +1,84 @@
+article{
+    margin: 0 5%;
+    padding-bottom: 3%;
+}
+
+h2{
+    font-size: 6rem;
+    padding: 5%;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-bottom: 3%;
+    text-align: justify;
+
+}
+
+h3{
+    
+    font-size: 1.5rem;
+    
+    border-bottom: #6f72747a 1px dashed;
+    border-top: #6f72747a 1px dashed;
+    box-shadow: 5px 5px 10px -4px #6f72747a;
+
+}
+
+
+.list li{
+    margin-top: 3%;
+}
+.list li a{
+    font-size: 1.3rem;
+    color: rgb(3, 5, 156); 
+    font-weight: bolder; 
+}
+
+/* fiches poste */
+
+.poste{
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+.myButton {
+	box-shadow: 0px 1px 5px 2px #d1d1d1;
+	background:linear-gradient(to bottom, #6f7274 5%, #a1a1a1 100%);
+	background-color:#6f7274;
+	border-radius:11px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1.3rem;
+	font-style:italic;
+	padding:0.5% 0.5%;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #a1a1a1 5%, #6f7274 100%);
+	background-color:#a1a1a1;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.article{
+    padding-bottom: 12%;
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+
+    p{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 22px;
+    }
+ 
+}
+        

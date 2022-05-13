@@ -2,11 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Loading from './composants/Loading.js'
-import Header from './header/Header.js';
 import Home from './composants/Home.js';
-import './header/header.css';
 
-import audio from './images/Looking for a new beginning.ogg'
+import audio from './Looking for a new beginning.ogg'
 
 
 function App() {
@@ -25,7 +23,7 @@ function App() {
           <Route exact path="/" component={Loading} />
           <Route path="/home" component={Home} />
         </Switch>
-
+        <div style={{ background: 'yellow', width: '100%', position: 'absolute', bottom: '0' }}>En construction...</div>
       </div>
     </BrowserRouter>
 
